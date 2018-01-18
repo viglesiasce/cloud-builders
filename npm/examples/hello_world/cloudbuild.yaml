@@ -3,6 +3,5 @@ steps:
   args: ['install']
 - name: 'gcr.io/$PROJECT_ID/npm'
   args: ['test']
-- name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '--tag=gcr.io/$PROJECT_ID/hello_npm', '.']
-images: ['gcr.io/$PROJECT_ID/hello_npm']
+- name: 'gcr.io/$PROJECT_ID/firebase'
+  args: ['deploy']
